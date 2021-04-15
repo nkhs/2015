@@ -72,9 +72,10 @@
       cssPayload.rel = 'stylesheet';
       cssPayload.type = 'text/css';
 
-      var jsPayload = document.createElement('script');
-      jsPayload.type = 'text/javascript';
-      jsPayload.async = jsPayload.defer = false;
+      var jsPayload1 = document.createElement('script');
+      jsPayload1.type = 'text/javascript';
+      jsPayload1.async = jsPayload1.defer = false;
+      
 
       var prefix;
       if (webGL() && !mobile()) {
@@ -84,12 +85,14 @@
       }
 
       cssPayload.href = './app/dist/css/' + prefix + '/main.css';
-      jsPayload.src = './app/dist/js/' + prefix + '/bundle.js';
+      jsPayload.src = './app/dist/js/' + prefix + '/vendor.js';
+      jsPayload1.src = './app/dist/js/' + prefix + '/main.js';
 
       var head = document.getElementsByTagName('head')[0];
 
       head.appendChild(cssPayload);
       head.appendChild(jsPayload);
+      head.appendChild(jsPayload1);
     })();
   </script>
 

@@ -1,7 +1,10 @@
 {
   "name": "2015",
-  "debug": false,
-  "watch": false,
+  "debug": true,
+  "watch": true,
+  "scripts": {
+      "start": "gulp build && gulp bundle && gulp serve"
+  },
   "devDependencies": {
     "browserify": "^6.3.2",
     "browserify-shim": "^3.8.0",

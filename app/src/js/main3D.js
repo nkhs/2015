@@ -103,19 +103,19 @@ jQuery(function () {
   SCENE.setViewport($viewport);
   SCENE.addSections([
     helloSection,
-    beamsSection,
-    dropSection,
+    // beamsSection,
+    // dropSection,
     ballSection,
-    flowSection,
-    neonsSection,
-    heightSection,
-    waveSection,
-    faceSection,
-    rocksSection,
+    // flowSection,
+    // neonsSection,
+    // heightSection,
+    // waveSection,
+    // faceSection,
+    // rocksSection,
     galaxySection,
-    gravitySection,
-    citySection,
-    endSection
+    // gravitySection,
+    // citySection,
+    // endSection
   ]);
 
   SCENE.on('section:changeBegin', function () {
@@ -456,7 +456,7 @@ jQuery(function () {
       waypoint.start();
     }
   });
- 
+
   // SCENE on/off
   APP.on('heads:visible', function () {
     SCENE.start();
