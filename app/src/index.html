@@ -72,6 +72,10 @@
       cssPayload.rel = 'stylesheet';
       cssPayload.type = 'text/css';
 
+      var jsPayload = document.createElement('script');
+      jsPayload.type = 'text/javascript';
+      jsPayload.async = jsPayload.defer = false;
+
       var jsPayload1 = document.createElement('script');
       jsPayload1.type = 'text/javascript';
       jsPayload1.async = jsPayload1.defer = false;

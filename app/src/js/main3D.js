@@ -113,7 +113,7 @@ jQuery(function () {
     // faceSection,
     // rocksSection,
     galaxySection,
-    // gravitySection,
+    gravitySection,
     // citySection,
     // endSection
   ]);
